@@ -15,10 +15,12 @@ function App() {
   function handleClick() {
     //<button onClick={this.handleClick}>Click me!</button>
     onClick={()=>{setFeatPupId(puppy.id)}}
+    setFeatPupId
+    { featuPupID && <p>{ featPupId }</p> } 
   }
 
-  
-  { featuPupID && <p>{ featPupId }</p> } 
+
+ 
 
   const featuredPup = puppies.find((pup)=> pup.id === featPupId)
   console.log(featuredPup)
